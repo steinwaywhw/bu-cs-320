@@ -36,17 +36,26 @@ BNF in Action
 =================
 
 .. productionlist::
-	postal-address	: `name-part` street-address zip-part
-	name-part 		: personal-part last-name opt-suffix-part
-					: | personal-part name-part
-	personal-part 	: first-name 
-					: | initial "." 
-	opt-suffix-part : "Sr." | "Jr." | roman-numeral | ""
-	street-address 	: house-num street-name opt-apt-num
-	zip-part		: town-name "," state-code zip-code
-	opt-apt-num		: apt-num | ""
+	postal_address	: `name_part` `street_address` `zip_part`
+	name_part 		: `personal_part` `last_name` `opt_suffix_part`
+					: | `personal_part` `name_part`
+	personal_part 	: `first_name`
+					: | `initial` "." 
+	opt_suffix_part : "Sr." | "Jr." | `roman_numeral` | ""
+	street_address 	: `house_num` `street_name` `opt_apt_num`
+	zip_part		: `town_name` "," `state_code` `zip_code`
+	opt_apt_num		: `apt_num` | ""
 
 .. note:: This example is taken from Wikipedia [wikibnf]_
+
+.. productionlist::
+   try_stmt: try1_stmt | try2_stmt
+   try1_stmt: "try" ":" `suite`
+            : ("except" [`expression` ["," `target`]] ":" `suite`)+
+            : ["else" ":" `suite`]
+            : ["finally" ":" `suite`]
+   try2_stmt: "try" ":" `suite`
+            : "finally" ":" `suite`
 
 
 
