@@ -14,7 +14,11 @@ My office hours are 13:00 - 14:30 (1.5hr) Wed, 17:30 - 19:00 (1.5hr) Wed at PSY 
 
 I can be reached on Piazza or by email, hwwu AT bu DOT edu.
 
-Contents:
+
+Contents
+==================
+
+The contents here will be updated as the course goes on. 
 
 .. toctree::
    :maxdepth: 2

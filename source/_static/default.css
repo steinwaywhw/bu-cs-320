@@ -1,0 +1,13 @@
+@import url("http://read-the-docs.readthedocs.org/en/latest/_static/rtd.css");
+@import url("http://read-the-docs.readthedocs.org/en/latest/_static/basic.css");
+@import url("https://distlib.readthedocs.org/en/latest/_static/pygments.css");
+
+
+div.admonition {
+	padding: 0;
+}
+
+pre a {
+	text-decoration: none;
+}
+
