@@ -24,6 +24,7 @@ The contents here will be updated as the course goes on.
    :maxdepth: 2
 
    bnf
+   sec2
 
 
 
